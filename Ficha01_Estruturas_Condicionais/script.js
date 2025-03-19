@@ -20,3 +20,16 @@
 // console.log(acc());
 
 // exercicio 2
+
+let valid = false;
+let intArray = [];
+while (valid === false) {
+  let int = Number(prompt("Insert a number:"));
+  intArray.push(int);
+
+  if (int == 0) {
+    valid = true;
+    console.log(Math.max(intArray));
+    console.log(intArray);
+  }
+}
