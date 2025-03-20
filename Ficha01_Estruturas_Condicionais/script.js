@@ -29,7 +29,10 @@ while (valid === false) {
 
   if (int == 0) {
     valid = true;
-    console.log(Math.max(intArray));
-    console.log(intArray);
+    const intArrayTrim = intArray.slice(-1);
+    console.log(intArrayTrim);
+
+    console.log(Math.max(...intArrayTrim));
+    console.log(Math.min(...intArrayTrim));
   }
 }
