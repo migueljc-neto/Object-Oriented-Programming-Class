@@ -1,0 +1,19 @@
+.form-container {
+  border: solid 1px blue;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: wrap;
+  align-content: center;
+  gap: 10px;
+}
+
+#add-form {
+  height: 25px;
+}
+
+#add-form > input,
+select {
+  margin-right: 20px;
+}
