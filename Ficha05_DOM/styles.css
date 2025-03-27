@@ -1,29 +1,16 @@
-.container {
-  border: solid 1px blue;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 10px;
-  display: wrap;
-  align-content: center;
+.inputContainer {
+  display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 
-#add-form {
-  height: 25px;
-}
-
-#add-form > input,
-select {
-  margin-right: 20px;
-}
-
-table,
-th,
-td {
-  padding: 10px;
-  gap: 0px;
-}
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+td {
+  text-align: center;
+}
+th {
+  padding: 0 10px;
 }
