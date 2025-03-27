@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Catalog</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="form-container">
+    <div class="form container">
       <form action="submit" id="add-form">
         <label for="name">Name: </label>
         <input
+          class="name-input"
           name="name"
           type="text"
           placeholder="Insert game name"
@@ -21,7 +21,7 @@
         <label for="release-date">Release date:</label>
         <input
           type="text"
-          id="date"
+          class="date-input"
           name="release-date"
           placeholder=""
           required
@@ -29,6 +29,7 @@
 
         <label for="genre">Genre:</label>
         <input
+          class="genre-input"
           name="genre"
           type="text"
           placeholder="Insert game genre"
@@ -36,19 +37,46 @@
         />
 
         <label for="platform">Platform:</label>
-        <select name="platform" id="platform" required>
+        <select name="platform" class="platform-input" required>
           <option value="placeholder" selected>--</option>
-          <option value="pc">PC</option>
-          <option value="xbox">XBox</option>
-          <option value="ps5">PS5</option>
-          <option value="ps3">PS3</option>
+          <option value="Pc">PC</option>
+          <option value="Xbox">XBox</option>
+          <option value="Ps5">PS5</option>
+          <option value="Ps3">PS3</option>
         </select>
 
         <label for="rating">Rating(1-10): </label>
-        <input type="text" placeholder="Year" required />
+        <input
+          type="number"
+          placeholder="0-10"
+          min="0"
+          max="10"
+          class="rate-input"
+          required
+        />
       </form>
 
-      <button type="submit" form="add-form" value="Submit">Add game</button>
+      <button
+        type="submit"
+        form="add-form"
+        value="Submit"
+        class="submit-button"
+      >
+        Add game
+      </button>
     </div>
+    <div class="container">
+        <table id="table">
+    <tr>
+      <th>Name</th>
+      <th>Release Date</th>
+      <th>Genre</th>
+      <th>Platform</th>
+      <th>Rate</th>
+    </tr>
+   
+</div>
+    
+    <script src="script.js"></script>
   </body>
 </html>
