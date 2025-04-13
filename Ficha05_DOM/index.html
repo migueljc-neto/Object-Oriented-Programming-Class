@@ -42,10 +42,13 @@
           required
         />
       </div>
-      <button type="submit">Add Game</button>
+      <button type="submit" id="submitButton">Add Game</button>
+
+      <button type="submit" id="filterPlatform">Filter by Platform</button>
+      <button type="submit" id="filterGenre">Filter by Genre</button>
     </div>
 
-    <table id="table">
+    <table>
       <thead>
         <tr>
           <th>Name</th>
@@ -53,16 +56,11 @@
           <th>Genre</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tableBody">
         <tr>
-          <td>a</td>
-          <td>b</td>
-          <td>c</td>
-        </tr>
-        <tr>
-          <td>a</td>
-          <td>b</td>
-          <td>c</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
         </tr>
       </tbody>
     </table>
