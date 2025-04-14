@@ -25,7 +25,7 @@ submitButton.addEventListener("click", function (e) {
   };
 
   lGames.push(gameObject);
-  console.log(lGames);
+  localStorage.setItem("games", JSON.stringify(lGames));
 
   updateTable(lGames);
 });
@@ -33,8 +33,8 @@ submitButton.addEventListener("click", function (e) {
 // add row to table
 const updateTable = function (list) {
   table.innerHTML = "";
-
-  list.forEach((item) => {
+  let lgames = JSON.parse(localStorage.games);
+  lgames.forEach((item) => {
     // create row for each element
     const row = document.createElement("tr");
     for (let i = 0; i < 3; i++) {
